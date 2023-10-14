@@ -1,0 +1,21 @@
+Test Case Name,Test Case Id,TestType,Group
+Verify that the App logo is clickable,3624,Smoke,Home
+Check the main navigation menu items,3625,Pipeline,Navigation
+Entering valid and invalid search terms,3626,Pipeline,Search
+Footer contains links to important pages,3627,Regression,Home
+Search for a specific product by name ,3628,Smoke,Search
+Verify product images are displayed,3629,Smoke,Shop
+Verify sorting options,3630,Regression,Shop
+Verify product details page,3631,Smoke,Shop
+Verify cart functionality,3632,Pipeline,Billing
+Verify shipping and billing fields,3633,Pipeline,Billing
+Verify payement and transactions,3634,Pipeline,Billing
+Verify new user sign up,3635,Pipeline,Account
+Valid and Invalid login,3636,Pipeline,Account
+Update login credentials,3637,Smoke,Account
+Verify Forgot Password functionality,3638,Smoke,Account
+Validate cross platform usage,3639,Regression,Compatibility
+Verify touch and zoom on Mobile app,3640,Regression,Navigation
+Validate multiple browser compatibility,3641,Regression,Compatibility
+Verify all pages load under 10 seconds,3642,Regression,Performance
+Validate concurrent login,3643,Regression,Account

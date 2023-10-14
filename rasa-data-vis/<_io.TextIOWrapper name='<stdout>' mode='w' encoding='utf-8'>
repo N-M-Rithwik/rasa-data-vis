@@ -1,0 +1,4 @@
+[94m('Verify sorting options', 3630, 'Regression', 'Shop', 'Blue', 'Fail')[0m
+[94m('Check the main navigation menu items', 3625, 'Pipeline', 'Navigation', 'Blue', 'Fail')[0m
+[94m('Verify Forgot Password functionality', 3638, 'Smoke', 'Account', 'Blue', 'Pass')[0m
+[94m('Verify cart functionality', 3632, 'Pipeline', 'Billing', 'Blue', 'Pass')[0m

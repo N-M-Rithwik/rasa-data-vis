@@ -1,0 +1,91 @@
+version: "3.1"
+
+stories:
+- story: Display Table
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: create_database_connection
+    - action: action_read_csvFiles
+    - intent: ask_display_table
+    - action: utter_fetchData
+    - action: action_display_table
+    - intent: affirm
+    - action: utter_happy
+
+- story: Delete Table
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_delete_table
+    - action: action_delete_table
+    - action: utter_removeData
+
+- story: Display Bar Chart
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: create_database_connection
+    - action: action_read_csvFiles
+    - intent: ask_display_barChart
+    - action: action_display_barChart
+    - action: utter_fetchData
+    - intent: affirm
+    - action: utter_happy
+
+- story: Display Pie Chart
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: create_database_connection
+    - action: action_read_csvFiles
+    - intent: ask_display_pieChart
+    - action: action_display_pieChart
+    - action: utter_fetchData
+    - intent: affirm
+    - action: utter_happy
+
+- story: Display Donut Chart
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: create_database_connection
+    - action: action_read_csvFiles
+    - intent: ask_display_donutChart
+    - action: action_display_donutChart
+    - action: utter_fetchData
+    - intent: affirm
+    - action: utter_happy
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: create_database_connection
+  - action: action_read_csvFiles
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_display_donutChart
+    entities:
+    - column_name: test type
+  - slot_was_set:
+    - column_name: test type
+  - action: action_display_donutChart
+  - action: utter_fetchData
+  - intent: ask_display_pieChart
+    entities:
+    - column_name: status
+  - slot_was_set:
+    - column_name: status
+  - action: action_display_pieChart
+  - action: utter_fetchData
+  - intent: ask_display_barChart
+    entities:
+    - column_name: app name
+  - slot_was_set:
+    - column_name: app name
+  - action: action_display_barChart
+  - action: utter_fetchData

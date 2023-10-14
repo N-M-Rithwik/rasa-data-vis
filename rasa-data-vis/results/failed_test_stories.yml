@@ -1,0 +1,17 @@
+version: "3.1"
+stories:
+- story: happy path 1 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: None: hello there!
+  - action: utter_greet
+  - intent: mood_great  # predicted: None: amazing
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: say goodbye (./tests/test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: None: bye-bye!
+  - action: utter_goodbye
+- story: bot challenge (./tests/test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: None: are you a bot?
+  - action: utter_iamabot

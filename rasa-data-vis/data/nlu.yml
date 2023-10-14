@@ -1,0 +1,114 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - perfect
+    - thank you
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - can you make money transaction?
+    - lend me some money.
+- intent: create_database_connection
+  examples: |
+    - create connection with database
+    - read csv files
+    - create database connection
+    - check database
+    - check contents in tables
+    - creaste tables
+- intent: ask_display_table
+  examples: |
+    - show details of table [test case](table_name)
+    - show details of table [test execution](table_name)
+    - display the details of table [test execution](table_name)
+    - display the details of table [test case](table_name)
+    - display table [test case](table_name)
+    - display table [test execution](table_name)
+    - show table [test case](table_name)
+    - show table [test execution](table_name)
+- intent: ask_delete_table
+  examples: |
+    - delete table [test case](table_name)
+    - delete table [test execution](table_name)
+    - delete the details of table [test execution](table_name)
+    - delete the details of table [test case](table_name)
+    - remove the contents from table [test execution](table_name)
+    - remove the contents from table [test case](table_name)
+    - drop table [test case](table_name)
+    - drop table [test execution](table_name)
+- intent: ask_display_barChart
+  examples: |
+    - display how test cases are divided by [groups](column_name) as bar chat
+    - show as a bar graph the [status](column_name) of execution
+    - bar chart of category [test type](column_name)
+    - select the count of [app name](column_name) as bar graph
+    - bar chart [app name](column_name)
+    - bar graph [groups]{"entity": "column_name", "value": "app name"}
+    - show count of different categories of [app name][{"entity": "column_name"}, {"entity": "column_name"}] as bar chart
+- intent: ask_display_pieChart
+  examples: |
+    - display how test cases are divided by [groups](column_name) as pie chat
+    - show as a pie graph the [status](column_name) of execution
+    - pie chart of category [test type](column_name)
+    - select the count of [app name](column_name) as pie graph
+    - pie chart [app name](column_name)
+    - pie graph [groups]{"entity": "column_name", "value": "app name"}
+    - display pie chart [status][{"entity": "column_name"}, {"entity": "column_name"}]
+    - show count of different categories of [status][{"entity": "column_name"}, {"entity": "column_name"}] as pie chart
+- intent: ask_display_donutChart
+  examples: |
+    - display how test cases are divided by [groups](column_name) as donut chat
+    - show as a donut graph the [status](column_name) of execution
+    - donut chart of category [test type](column_name)
+    - select the count of [app name](column_name) as donut graph
+    - donut chart [app name](column_name)
+    - donut graph [groups]{"entity": "column_name", "value": "app name"}
+    - display donut chart for [test type][{"entity": "column_name"}, {"entity": "column_name"}]
+    - show count of different categories of [status][{"entity": "column_name"}, {"entity": "column_name"}] as donut chart

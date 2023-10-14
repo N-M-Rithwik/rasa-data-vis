@@ -1,0 +1,47 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Display Table
+  steps:
+  - intent: ask_display_table
+  - action: utter_fetchData
+  - action: action_display_table
+
+- rule: Delete Table
+  steps: 
+  - intent: ask_delete_table
+  - action: action_delete_table
+  - action: utter_removeData
+
+- rule: Display Bar Chart
+  steps:
+  - intent: ask_display_barChart
+  - action: action_display_barChart
+  - action: utter_fetchData
+
+- rule: Display Pie Chart
+  steps:
+  - intent: ask_display_pieChart
+  - action: action_display_pieChart
+  - action: utter_fetchData
+
+- rule: Display Donut Chart
+  steps:
+  - intent: ask_display_donutChart
+  - action: action_display_donutChart
+  - action: utter_fetchData
+
+- rule: Create Database
+  steps:
+  - intent: create_database_connection
+  - action: action_read_csvFiles

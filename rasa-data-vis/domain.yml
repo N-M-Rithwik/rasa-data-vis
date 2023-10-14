@@ -1,0 +1,55 @@
+version: '3.1'
+intents:
+- affirm
+- ask_delete_table
+- ask_display_barChart
+- ask_display_donutChart
+- ask_display_pieChart
+- ask_display_table
+- bot_challenge
+- create_database_connection
+- deny
+- goodbye
+- greet
+entities:
+- column_name
+- table_name
+slots:
+  table_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: table_name
+  column_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: column_name
+responses:
+  utter_greet:
+  - text: Hey! What can i do for you today?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_fetchData:
+  - text: Sure, thing. I can fetch the required details.
+  utter_removeData:
+  - text: Okay, Dropping the table.
+actions:
+- action_display_barChart
+- utter_greet
+- action_display_donutChart
+- action_display_pieChart
+- action_read_csvFiles
+- action_display_table
+- action_delete_table
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

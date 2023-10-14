@@ -1,0 +1,67 @@
+Test Case Name,Test Case Id,TestType,Group,App Name,Status
+Verify that the App logo is clickable,3624,Smoke,Home,Red,Pass
+Check the main navigation menu items,3625,Pipeline,Navigation,Red,Fail
+Entering valid and invalid search terms,3626,Pipeline,Search,Red,Fail
+Footer contains links to important pages,3627,Regression,Home,Red,Pass
+Search for a specific product by name ,3628,Smoke,Search,Red,Pass
+Verify product images are displayed,3629,Smoke,Shop,Red,Pass
+Verify sorting options,3630,Regression,Shop,Red,Pass
+Verify product details page,3631,Smoke,Shop,Red,Fail
+Verify cart functionality,3632,Pipeline,Billing,Red,Fail
+Verify shipping and billing fields,3633,Pipeline,Billing,Red,Skip
+Verify payement and transactions,3634,Pipeline,Billing,Red,Fail
+Verify new user sign up,3635,Pipeline,Account,Red,Fail
+Valid and Invalid login,3636,Pipeline,Account,Red,Pass
+Update login credentials,3637,Smoke,Account,Red,Skip
+Verify Forgot Password functionality,3638,Smoke,Account,Red,Pass
+Validate cross platform usage,3639,Regression,Compatibility,Red,Pass
+Verify touch and zoom on Mobile app,3640,Regression,Navigation,Red,Pass
+Validate multiple browser compatibility,3641,Regression,Compatibility,Red,Fail
+Verify all pages load under 10 seconds,3642,Regression,Performance,Red,Skip
+Validate concurrent login,3643,Regression,Account,Red,Pass
+Verify that the App logo is clickable,3624,Smoke,Home,Blue,Fail
+Check the main navigation menu items,3625,Pipeline,Navigation,Blue,Fail
+Entering valid and invalid search terms,3626,Pipeline,Search,Blue,Pass
+Footer contains links to important pages,3627,Regression,Home,Blue,Pass
+Search for a specific product by name ,3628,Smoke,Search,Blue,Skip
+Verify product images are displayed,3629,Smoke,Shop,Blue,Pass
+Verify sorting options,3630,Regression,Shop,Blue,Fail
+Verify product details page,3631,Smoke,Shop,Blue,Skip
+Verify cart functionality,3632,Pipeline,Billing,Blue,Fail
+Verify shipping and billing fields,3633,Pipeline,Billing,Blue,Fail
+Verify payement and transactions,3634,Pipeline,Billing,Blue,Skip
+Verify new user sign up,3635,Pipeline,Account,Blue,Pass
+Valid and Invalid login,3636,Pipeline,Account,Blue,Pass
+Update login credentials,3637,Smoke,Account,Blue,Pass
+Verify Forgot Password functionality,3638,Smoke,Account,Blue,Pass
+Validate cross platform usage,3639,Regression,Compatibility,Blue,Fail
+Verify touch and zoom on Mobile app,3640,Regression,Navigation,Blue,Skip
+Validate multiple browser compatibility,3641,Regression,Compatibility,Blue,Skip
+Verify all pages load under 10 seconds,3642,Regression,Performance,Blue,Fail
+Validate concurrent login,3643,Regression,Account,Blue,Pass
+Footer contains links to important pages,3627,Regression,Home,Blue,Fail
+Search for a specific product by name ,3628,Smoke,Search,Blue,Fail
+Verify product images are displayed,3629,Smoke,Shop,Red,Pass
+Verify sorting options,3630,Regression,Shop,Red,Pass
+Verify product details page,3631,Smoke,Shop,Blue,Skip
+Verify cart functionality,3632,Pipeline,Billing,Red,Pass
+Verify shipping and billing fields,3633,Pipeline,Billing,Red,Fail
+Verify payement and transactions,3634,Pipeline,Billing,Red,Skip
+Verify new user sign up,3635,Pipeline,Account,Blue,Fail
+Valid and Invalid login,3636,Pipeline,Account,Blue,Skip
+Check the main navigation menu items,3625,Pipeline,Navigation,Blue,Skip
+Entering valid and invalid search terms,3626,Pipeline,Search,Red,Fail
+Footer contains links to important pages,3627,Regression,Home,Red,Fail
+Search for a specific product by name ,3628,Smoke,Search,Red,Skip
+Verify product images are displayed,3629,Smoke,Shop,Blue,Pass
+Verify sorting options,3630,Regression,Shop,Blue,Pass
+Verify product details page,3631,Smoke,Shop,Red,Pass
+Verify cart functionality,3632,Pipeline,Billing,Blue,Pass
+Verify shipping and billing fields,3633,Pipeline,Billing,Red,Fail
+Verify payement and transactions,3634,Pipeline,Billing,Blue,Skip
+Verify new user sign up,3635,Pipeline,Account,Blue,Pass
+Valid and Invalid login,3636,Pipeline,Account,Blue,Fail
+Update login credentials,3637,Smoke,Account,Red,Fail
+Verify Forgot Password functionality,3638,Smoke,Account,Red,Pass
+Validate concurrent login,3643,Regression,Account,Red,Fail
+Verify that the App logo is clickable,3624,Smoke,Home,Red,Fail
